@@ -1,0 +1,18 @@
+{
+  "name": "create-objects",
+  "author": "David Björklund <david.bjorklund@gmail.com> (http://davidbjorklund.se)",
+  "description": "Create objects from arrays of arrays",
+  "version": "0.0.0",
+  "repository": {
+    "url": "git://github.com/kesla/create-objects.git"
+  },
+  "main": "create-objects.js",
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tap": "~0.4.0"
+  },
+  "licence": "MIT" 
+}
