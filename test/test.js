@@ -54,16 +54,14 @@ test('key with "\'"-char', function(t) {
   t.end()
 })
 
-test('ignore empty keys', function(t) {
+test('ignore none-string keys', function(t) {
   var keys = [
         null, 0, undefined, 'bing', false
       ]
     , values = [ 1, 2, 3, 4, 5 ]
     , actual = createObjects(keys)(values)
     , expected = {
-          '0': 2
-        , 'bing': 4
-        , 'false': 5
+          'bing': 4
       }
 
   t.deepEqual(actual, expected)

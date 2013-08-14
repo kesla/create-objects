@@ -1,18 +1,20 @@
 
 var escapeKey = function(key) {
-      return key.replace(/\n/g, '\\n').replace(/'/g, '\\\'')
+      return '\'' + key.replace(/\n/g, '\\n').replace(/'/g, '\\\'') + '\''
+    }
+
+  , createInit = function(keys) {
+      var init = []
+      keys.forEach(function(key, i) {
+        if (typeof(key) === 'string')
+          init.push(escapeKey(key) + ': input[' + i + ']')
+      })
+      return init
     }
 
   , createParser = function(keys) {
-      var str = 'return {\n' +
-        keys.map(function(key, i) {
-          if (key === null || key === undefined)
-            return null
-          key = key.toString()
-
-          return '  \'' + escapeKey(key) + '\': input[' + i + ']'
-        }).filter(Boolean).join(', \n') +
-        '\n}'
+      var init = createInit(keys)
+        , str = 'return {\n' + init + '\n}'
 
       return new Function('input', str)
     }
