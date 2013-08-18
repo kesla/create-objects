@@ -1,6 +1,8 @@
 
-var escapeKey = function(key) {
-      return '\'' + key.replace(/\n/g, '\\n').replace(/'/g, '\\\'') + '\''
+var jsesc = require('jsesc')
+
+  , escapeKey = function(key) {
+      return '\'' + jsesc(key) + '\''
     }
 
   , createInit = function(keys) {
