@@ -60,7 +60,7 @@ test('key with other weird chars', function(t) {
         , '\n'
         , '♥'
       ]
-    , values = [1, 2, 3]
+    , values = [ 1, 2, 3 ]
     , actual = createObjects(keys)(values)
     , expected = {
           '\t': 1

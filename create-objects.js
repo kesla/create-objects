@@ -22,12 +22,12 @@ var jsesc = require('jsesc')
     }
 
   , CreateObjects = function(keys) {
-      this.parser = createParser(keys)
+      this.parse = createParser(keys)
     }
 
 module.exports = function(keys) {
   var create = new CreateObjects(keys)
   return function(values) {
-    return create.parser(values)
+    return create.parse(values)
   }
 }
