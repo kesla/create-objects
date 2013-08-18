@@ -1,4 +1,4 @@
-# create-objects
+# create-objects[![build status](https://secure.travis-ci.org/kesla/create-objects.png)](http://travis-ci.org/kesla/create-objects)
 
 Create objects from arrays of arrays
 
