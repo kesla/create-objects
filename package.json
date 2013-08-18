@@ -2,7 +2,7 @@
   "name": "create-objects",
   "author": "David Björklund <david.bjorklund@gmail.com> (http://davidbjorklund.se)",
   "description": "Create objects from arrays of arrays",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "repository": {
     "url": "git://github.com/kesla/create-objects.git"
   },
