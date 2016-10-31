@@ -11,10 +11,10 @@
     "test": "tap test/*.js"
   },
   "dependencies": {
-    "jsesc": "~0.4.2"
+    "jsesc": "~2.2.0"
   },
   "devDependencies": {
-    "tap": "~0.4.0"
+    "tap": "~8.0.0"
   },
   "licence": "MIT"
 }
